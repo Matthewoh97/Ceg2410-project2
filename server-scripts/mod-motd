@@ -17,8 +17,13 @@ echo "Programs have been installed!"
 
 function motd-message () {
 
+sudo run-parts /etc/update-motd.d/
 
 }
+
+motd-message
+echo "Thanks for displaying my custom message!"
+
  
 fi
 

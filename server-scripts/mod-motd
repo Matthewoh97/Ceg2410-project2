@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ $EUID -ne 0 ]; then
+    echo "You are not the admin I am looking for."
+else
+    echo "Hello, this is running with root/sudo."
+ 
+fi

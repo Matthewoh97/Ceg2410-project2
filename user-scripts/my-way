@@ -3,3 +3,18 @@
 echo "This script will say Hi!"
 
 wget -P ~/.vim/colors/ https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+
+read -r -p "Would you like to install jellybeans for vim? [yn]" answer
+
+
+if [ $answer = y ]
+then
+ echo 'colorscheme jellybeans' > ~/.vimrc
+ echo "Good to go!"
+else
+ echo "Okay bye!"
+fi
+ 
+
+
+
